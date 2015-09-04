@@ -38,3 +38,9 @@ node_modules
 out
 gen
 
+
+### Sass template
+.sass-cache
+*.css.map
+
+
