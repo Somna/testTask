@@ -1,0 +1,35 @@
+{
+  "name": "testtask",
+  "version": "1.0.0",
+  "description": "Тестовое задание для вакансии frontend-разработчик в компанию 2GIS",
+  "main": "public_html/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/somna/testtask.git"
+  },
+  "keywords": [
+    "2gis",
+    "frontend",
+    "backbone",
+    "cards",
+    "handlebars"
+  ],
+  "author": "Andrey Sanatullov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/somna/testtask/issues"
+  },
+  "homepage": "https://github.com/somna/testtask#readme",
+  "devDependencies": {
+    "backbone": "^1.2.3",
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "^1.0.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "jquery": "^2.1.4",
+    "requirejs": "^2.1.20",
+    "underscore": "^1.8.3"
+  }
+}
