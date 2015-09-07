@@ -30,13 +30,17 @@ require.config({
 
 define([
     'backbone',
+    'views/WindowView',
     'collections/CardsList',
     'views/CardsView'
 ], function (
     Backbone,
+    WindowView,
     CardsList,
     CardsView
 ) {
+
+    window.view = new WindowView();
 
     window.cardsView = new CardsView({
         collection: new CardsList(cards)
