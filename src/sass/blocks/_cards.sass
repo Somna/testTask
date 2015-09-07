@@ -14,14 +14,34 @@ $card-v-margin: 20px
     margin-top: $card-v-margin
     +box-shadow(0px 0px 5px 0px rgba(0, 0, 0, 0.2))
 
-    &:first-child
-      margin-left: 0
     &:last-child
       margin-left: 60px
+    &:first-child
+      margin-left: 0
 
     &_narrow
       width: 400px
+      .cards__index
+        left: 40%
+
     &_wide
       width: 400px
+      .cards__index
+        left: 40%
       &:last-child
         width: 960px
+        .cards__index
+          left: 45%
+
+  &__index
+    width: 102px
+    height: 102px
+    background: url('../images/ellipse.png') no-repeat
+    margin: auto
+    position: absolute
+    top: 45%
+    text-align: center
+    padding-top: 24px
+    font-size: 48px
+    font-weight: bold
+

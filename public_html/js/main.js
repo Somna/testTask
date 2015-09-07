@@ -28,8 +28,23 @@ require.config({
     }
 });
 
-define(['backbone', 'tmpl/Card'], function (Backbone, CardTmpl) {
+define([
+    'backbone',
+    'collections/CardsList',
+    'views/CardsView'
+], function (
+    Backbone,
+    CardsList,
+    CardsView
+) {
 
-    $('#page').html(CardTmpl({}));
+    window.cardsView = new CardsView({
+        collection: new CardsList(cards)
+    });
+
+    window.cardsView.render();
+
+
+
 
 });
