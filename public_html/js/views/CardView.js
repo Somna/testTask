@@ -6,14 +6,14 @@ define(['backbone', 'tmpl/Card'], function (Backbone, cardTmpl) {
         template: cardTmpl,
         events: function () {
             return {
-                'click': 'remove'
             }
         },
         initialize: function () {
+            // слушаем модель на удаление
+            this.listenTo(this.model, 'remove', this.remove);
         },
         render: function () {
             this.$el.html(this.template(this.model.toJSON()));
-            console.log(this.model);
             return this;
         }
     });
